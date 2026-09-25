@@ -1,6 +1,6 @@
 # power_bi_project
-Superstore Business Intelligence & Customer Analytics Dashboard
-An end-to-end Power BI business intelligence project built using the Kaggle Superstore dataset to demonstrate practical skills in data preparation, dimensional modeling, DAX, customer analytics, operational analysis, and interactive dashboard development.
+Superstore Customer Analytics Dashboard
+A Power BI business intelligence project built using the Kaggle Superstore dataset to demonstrate practical skills in data preparation, dimensional modeling, DAX, customer analytics, operational analysis, and interactive dashboard development.
 The project transforms raw Superstore, People, and Returns datasets into a structured star-schema data model and an interactive multi-page Power BI report designed to answer key business questions across sales, profitability, products, customers, returns, and operational performance.
 
 Project Objectives
