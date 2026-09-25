@@ -6,27 +6,31 @@ A Power BI project built using the Kaggle Superstore dataset to demonstrate prac
 The project transforms raw Superstore, People, and Returns datasets into a structured star-schema data model and an interactive multi-page Power BI report designed to answer key business questions across sales, profitability, products, customers, returns, and operational performance.
 
 Project Objectives
+
+
 The dashboard is designed to help business and BI stakeholders:
 Monitor overall sales, profitability, customers, orders, and returns.
-Identify high- and low-performing products and categories.
+Identify high & low performing products and categories.
 Analyze customer value, purchasing behavior, and retention risk.
 Evaluate return patterns and operational efficiency.
 Track sales and profit trends over time.
 Analyze profitability across products, categories, states, regions, and shipping modes.
 Segment customers using RFM (Recency, Frequency, Monetary) analysis.
-Provide interactive drill-through analysis from high-level KPIs to individual product and order details.
+Provide interactive drill-through analysis from high level KPIs to individual product and order details.
 
 Data Sources
-The project uses three Kaggle Superstore datasets:
-Superstore — transactional sales and order-level data.
+
+
+The project uses 3 Kaggle Superstore datasets:
+Superstore — transactional sales and order level data.
 People — regional/people information.
-Returns — returned-order information.
+Returns — returned order information.
 The original flat files were imported into Power BI and transformed using Power Query.
 
 Data Preparation & Power Query
 The data preparation layer includes:
 Data type correction and validation.
-Locale-based date conversion for date fields.
+Locale based date conversion for date fields.
 Appropriate data types for numeric, categorical, and identifier fields.
 Column removal and restructuring.
 Creation of a Geography Key for geographic modeling.
@@ -36,6 +40,8 @@ Separation of staging and analytical tables using Power Query references.
 Disabled load for the initial staging datasets to keep the model focused on analytical tables.
 
 Data Model
+
+
 The report follows a star-schema architecture, with Fact Superstore serving as the central fact table.
 Fact Table
 Fact Superstore
@@ -81,10 +87,14 @@ Region
 Geography Key
 
 Person
+
+
 A dedicated Date Table is also used for time intelligence, containing year, quarter, month, month name, year-month, day, day name, and day number attributes.
 The model uses one-to-many relationships from dimensions to the fact table, while the Customer RFM analysis is connected to the Customer dimension.
 
 Customer RFM Analysis
+
+
 A dedicated Customer RFM table was developed for customer segmentation and risk analysis.
 The analysis includes:
 Recency
@@ -100,6 +110,8 @@ Analysis date
 This enables identification of customer groups such as high-value, loyal, inactive, and at-risk customers and provides a foundation for targeted customer analysis.
 
 Dashboard Pages
+
+
 1. Executive Summary
 Provides a high-level overview of business performance.
 KPIs:
@@ -197,6 +209,8 @@ Return rate by category
 Year-based filtering
 
 Interactive Reporting Features
+
+
 The report incorporates several Power BI features to improve exploration and usability:
 Slicers and cross-filtering
 Drill-through analysis
@@ -218,6 +232,8 @@ Top Product
 Product-level profitability and return metrics
 
 DAX & Analytical Techniques
+
+
 The project uses DAX to build reusable business metrics and analytical calculations, including functions and techniques such as:
 CALCULATE
 FILTER
